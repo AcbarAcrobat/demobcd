@@ -11,5 +11,5 @@ class TestLogin:
         self.header_page = HeaderPage(self.driver)
         self.login_page.open()
         assert self.login_page.at_page()
-        self.login_page.login_to_bcd()
+        self.login_page.login()
         assert self.header_page.at_page()

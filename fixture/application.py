@@ -1,8 +1,12 @@
 from selenium.webdriver.chrome.webdriver import WebDriver
-from webdriver_manager.chrome import ChromeDriverManager
 from fixture.session import SessionHelper
 from fixture.locators import Locators
 from src.pages.header_page import HeaderPage
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
+
 
 class Application:
 
@@ -32,3 +36,12 @@ class Application:
 
     def at_page(self):
         return "FILES" in self.wd.title
+
+    def header_page(self):
+        wd = WebDriver()
+        try:
+            profile_logo_element = WebDriverWait(wd, 10) \
+                .until(EC.presence_of_element_located(By.CLASS_NAME, "b-screen__logo-title"))
+            return profile_logo_element.is_displayed()
+        except TimeoutException:
+            return False

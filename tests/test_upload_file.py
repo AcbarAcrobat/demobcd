@@ -1,6 +1,5 @@
 import pytest
 from fixture.application import Application
-from src.pages.header_page import HeaderPage
 
 
 def test_upload_file(app):

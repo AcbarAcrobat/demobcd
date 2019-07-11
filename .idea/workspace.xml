@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b38d3cc5-37e2-47d3-b427-4fb8319f086b" name="Default Changelist" comment="&quot;test_login - Worked&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/demobiocad.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/demobiocad.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/locators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/session.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/header_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/header_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_upload_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_upload_file.py" afterDir="false" />
@@ -16,14 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fixture/application.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#57#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-164">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -31,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fixture/session.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="225">
+              <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -40,28 +39,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fixture/locators.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="210">
+              <caret line="14" column="59" lean-forward="true" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/header_page.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/test_upload_file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -135,18 +123,19 @@
         <option value="$PROJECT_DIR$/src/pages/main_page.py" />
         <option value="$PROJECT_DIR$/conftest.py" />
         <option value="$PROJECT_DIR$/fixture/grid.py" />
-        <option value="$PROJECT_DIR$/fixture/session.py" />
         <option value="$PROJECT_DIR$/fixture/locators.py" />
         <option value="$PROJECT_DIR$/src/pages/header_page.py" />
-        <option value="$PROJECT_DIR$/fixture/application.py" />
+        <option value="$PROJECT_DIR$/fixture/session.py" />
         <option value="$PROJECT_DIR$/tests/test_upload_file.py" />
+        <option value="$PROJECT_DIR$/fixture/application.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2574" />
-    <option name="width" value="1266" />
-    <option name="height" value="1061" />
+    <option name="x" value="180" />
+    <option name="y" value="132" />
+    <option name="width" value="1080" />
+    <option name="height" value="659" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -158,44 +147,29 @@
         <subPane>
           <expand>
             <path>
-              <item name="demobiocad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demobiocad" type="462c0819:PsiDirectoryNode" />
+              <item name="demobcd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demobcd" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="demobiocad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demobiocad" type="462c0819:PsiDirectoryNode" />
+              <item name="demobcd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demobcd" type="462c0819:PsiDirectoryNode" />
               <item name="drivers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="demobiocad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demobiocad" type="462c0819:PsiDirectoryNode" />
+              <item name="demobcd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demobcd" type="462c0819:PsiDirectoryNode" />
               <item name="file" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="demobiocad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demobiocad" type="462c0819:PsiDirectoryNode" />
-              <item name="fixture" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demobiocad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demobiocad" type="462c0819:PsiDirectoryNode" />
+              <item name="demobcd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demobcd" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="demobiocad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demobiocad" type="462c0819:PsiDirectoryNode" />
+              <item name="demobcd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demobcd" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demobiocad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demobiocad" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="demobiocad" type="b2602c69:ProjectViewProjectNode" />
-              <item name="demobiocad" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -294,6 +268,8 @@
       <workItem from="1562574944020" duration="5111000" />
       <workItem from="1562648661087" duration="601000" />
       <workItem from="1562670525349" duration="16138000" />
+      <workItem from="1562768681375" duration="317000" />
+      <workItem from="1562844802980" duration="454000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;test_login&quot;">
       <created>1561710937681</created>
@@ -320,12 +296,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_upload_file_TestData - 2019.07.10 at 14h 27m 18s.xml">
-      <configuration name="pytest for test_upload_file.TestData" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_upload_file_TestData - 2019.07.10 at 14h 34m 14s.xml">
-      <configuration name="pytest for test_upload_file.TestData" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_for_test_upload_file_TestData - 2019.07.10 at 15h 00m 57s.xml">
       <configuration name="pytest for test_upload_file.TestData" configurationId="tests" />
     </history-entry>
@@ -350,21 +320,27 @@
     <history-entry file="pytest_for_test_upload_file_TestData - 2019.07.10 at 15h 37m 26s.xml">
       <configuration name="pytest for test_upload_file.TestData" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_for_test_upload_file_TestData - 2019.07.10 at 21h 28m 38s.xml">
+      <configuration name="pytest for test_upload_file.TestData" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_upload_file_TestData - 2019.07.10 at 21h 28m 57s.xml">
+      <configuration name="pytest for test_upload_file.TestData" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76659000" />
+    <option name="totallyTimeSpent" value="77430000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2574" y="0" width="1266" height="1061" extended-state="0" />
+    <frame x="180" y="132" width="1080" height="659" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1614754" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16111112" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32946146" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.40232313" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.33262935" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33163264" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -435,10 +411,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="&quot;test_login - Worked&quot;" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/demobiocad$pytest_in_test_login_py.coverage" NAME="pytest in test_login.py Coverage Results" MODIFIED="1562149114341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/demobiocad$pytest_in_test_upload_file_py.coverage" NAME="pytest in test_upload_file.py Coverage Results" MODIFIED="1562738501925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/demobiocad$pytest_for_test_upload_file_TestData.coverage" NAME="pytest for test_upload_file.TestData Coverage Results" MODIFIED="1562747841418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/demobcd$pytest_for_test_upload_file_TestData.coverage" NAME="pytest for test_upload_file.TestData Coverage Results" MODIFIED="1562768929616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/demobiocad$pytest_in_bin.coverage" NAME="pytest in bin Coverage Results" MODIFIED="1561712506578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/demobiocad$pytest_in_test_login_py.coverage" NAME="pytest in test_login.py Coverage Results" MODIFIED="1562149114341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/demobiocad$pytest_for_test_upload_file_TestData.coverage" NAME="pytest for test_upload_file.TestData Coverage Results" MODIFIED="1562747841418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/page/base_page.py" />
@@ -446,9 +423,7 @@
     <entry file="file://$PROJECT_DIR$/newgen/test/conftest.py" />
     <entry file="file://$PROJECT_DIR$/newgen/requirements.txt" />
     <entry file="file://$PROJECT_DIR$/newgen/tasks.py" />
-    <entry file="file://$PROJECT_DIR$/tests/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/__init__.py" />
     <entry file="file://$PROJECT_DIR$/drivers/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -569,12 +544,8 @@
     <entry file="file://$PROJECT_DIR$/file/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/file/TESTTESTTEST12345.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/file/TESTTESTTEST12345.py" />
+    <entry file="file://$PROJECT_DIR$/__init__.py" />
     <entry file="file://$PROJECT_DIR$/tests/test_create_template.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -582,16 +553,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/login_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/login_page.py" />
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/selenium/webdriver/common/service.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
@@ -606,20 +568,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/main_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/grid.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/main_page.py" />
+    <entry file="file://$PROJECT_DIR$/fixture/grid.py" />
     <entry file="file://$PROJECT_DIR$/conftest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -627,46 +577,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/locators.py">
+    <entry file="file:///usr/local/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="-192">
+          <caret line="119" column="11" lean-forward="true" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/header_page.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_upload_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fixture/session.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="225">
+          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/header_page.py">
+    <entry file="file://$PROJECT_DIR$/fixture/locators.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="14" column="59" lean-forward="true" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fixture/application.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_upload_file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-164">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

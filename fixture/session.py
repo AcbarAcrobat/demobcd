@@ -14,7 +14,3 @@ class SessionHelper:
         wd.find_element(*Locators.PASSWORD_INPUT).clear()
         wd.find_element(*Locators.PASSWORD_INPUT).send_keys("gwRz7WWs6kXd")
         wd.find_element(*Locators.LOGIN_BUTTON).submit()
-
-    # def click_login_button(app):
-    #     wd = app.wd
-    #     WebDriverWait(wd.app, 10).until(EC.presence_of_element_located(*Locators.LOGIN_INPUT)).click()

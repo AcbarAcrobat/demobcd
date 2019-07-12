@@ -1,3 +1,4 @@
+import time
 from selenium.webdriver.chrome.webdriver import WebDriver
 from fixture.session import SessionHelper
 from fixture.locators import Locators
@@ -21,8 +22,8 @@ class Application:
 
     def upload_file(self):
         wd = self.wd
-        wd.find_element(*Locators.DOWNLOAD_BUTTON).click()
-        wd.find_element(*Locators.CHOOSE_BUTTON).send_keys("/Users/arm/demobcd/file/Attila - Villain.mp4")
+        wd.find_element(*Locators.UPLOAD_BUTTON).click()
+        wd.find_element(*Locators.CHOOSE_BUTTON).send_keys("/Users/arm/demobcd/file/VIDEO_FILE.mp4")
         wd.find_element(*Locators.LAST_DOWNLOAD_BUTTON).click()
 
     def create_template(self):
@@ -34,6 +35,19 @@ class Application:
 
     def at_page(self):
         return "FILES" in self.wd.title
+
+    def delete_file(self):
+        wd = self.wd
+        time.sleep(3)
+        wd.find_element(*Locators.SEARCH_FIELD).send_keys("VIDEO_FILE")
+        wd.find_element(*Locators.SEARCH_BUTTON).click()
+        wd.find_element(*Locators.FILE_IN_GRID).click()
+        wd.find_element(*Locators.DELETE_BUTTON).click()
+
+    def create_template(self):
+        wd = self.wd
+        wd.find_element(*Locators.TEMPLATES_LINK).click()
+        wd.find_element()
 
     def header_page(self):
         wd = self.wd

@@ -1,5 +1,7 @@
 import pytest
 from fixture.application import Application
+
+
 # import allure
 # from selenium import webdriver
 # from selenium.webdriver.chrome.webdriver import WebDriver
@@ -28,7 +30,7 @@ from fixture.application import Application
 #                 print(e)
 
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="function")
 def app(request):
     fixture = Application()
     request.addfinalizer(fixture.destroy)

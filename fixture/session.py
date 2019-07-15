@@ -9,8 +9,8 @@ class SessionHelper:
     def login(self):
         wd = self.app.wd
         self.app.open_home_page()
-        wd.find_element(*Locators.LOGIN_INPUT).clear()
-        wd.find_element(*Locators.LOGIN_INPUT).send_keys("superadmin")
-        wd.find_element(*Locators.PASSWORD_INPUT).clear()
-        wd.find_element(*Locators.PASSWORD_INPUT).send_keys("gwRz7WWs6kXd")
-        wd.find_element(*Locators.LOGIN_BUTTON).submit()
+        wd.find_element(*Locators.LOGIN_FIELD).clear()
+        wd.find_element(*Locators.LOGIN_FIELD).send_keys("superadmin")
+        wd.find_element(*Locators.PASSWORD_FIELD).clear()
+        wd.find_element(*Locators.PASSWORD_FIELD).send_keys("gwRz7WWs6kXd")
+        wd.find_element(*Locators.SUBMIT_BUTTON).submit()

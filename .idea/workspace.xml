@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b38d3cc5-37e2-47d3-b427-4fb8319f086b" name="Default Changelist" comment="&quot;test_login - Worked&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/locators.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/session.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +16,14 @@
     <splitter split-orientation="horizontal" split-proportion="0.73789847">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/fixture/application.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="294">
-                  <caret line="68" column="69" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="69" />
+                <state relative-caret-position="1293">
+                  <caret line="90" column="70" selection-start-line="90" selection-start-column="70" selection-end-line="90" selection-end-column="91" />
+                  <folding>
+                    <element signature="e#0#11#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -27,17 +31,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/fixture/session.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+                <state relative-caret-position="210">
+                  <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/fixture/locators.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" selection-start-line="6" selection-end-line="6" />
+                <state relative-caret-position="375">
+                  <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -58,8 +62,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tests/tests_for_demo.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-end-line="7" />
+                <state relative-caret-position="75">
+                  <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -140,10 +144,10 @@
         <option value="$PROJECT_DIR$/src/pages/header_page.py" />
         <option value="$PROJECT_DIR$/fixture/session.py" />
         <option value="$PROJECT_DIR$/tests/test_upload_file.py" />
-        <option value="$PROJECT_DIR$/fixture/locators.py" />
         <option value="$PROJECT_DIR$/conftest.py" />
-        <option value="$PROJECT_DIR$/tests/tests_for_demo.py" />
         <option value="$PROJECT_DIR$/fixture/application.py" />
+        <option value="$PROJECT_DIR$/tests/tests_for_demo.py" />
+        <option value="$PROJECT_DIR$/fixture/locators.py" />
       </list>
     </option>
   </component>
@@ -296,6 +300,7 @@
       <workItem from="1563168712435" duration="7630000" />
       <workItem from="1563189754729" duration="2586000" />
       <workItem from="1563200903307" duration="858000" />
+      <workItem from="1563204912237" duration="1779000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;test_login&quot;">
       <created>1561710937681</created>
@@ -322,15 +327,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.15 at 18h 50m 53s.xml">
-      <configuration name="pytest for tests.tests_for_demo" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.15 at 18h 52m 41s.xml">
-      <configuration name="pytest for tests.tests_for_demo" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.15 at 18h 53m 54s.xml">
-      <configuration name="pytest for tests.tests_for_demo" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.15 at 18h 54m 37s.xml">
       <configuration name="pytest for tests.tests_for_demo" configurationId="tests" />
     </history-entry>
@@ -352,9 +348,18 @@
     <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.15 at 21h 42m 20s.xml">
       <configuration name="pytest for tests.tests_for_demo" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.15 at 23h 59m 29s.xml">
+      <configuration name="pytest for tests.tests_for_demo" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.16 at 00h 00m 17s.xml">
+      <configuration name="pytest for tests.tests_for_demo" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.16 at 00h 02m 18s.xml">
+      <configuration name="pytest for tests.tests_for_demo" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101713000" />
+    <option name="totallyTimeSpent" value="103492000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -435,24 +440,13 @@
     <MESSAGE value="&quot;test_login - Worked&quot;" />
     <option name="LAST_COMMIT_MESSAGE" value="&quot;test_login - Worked&quot;" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/fixture/locators.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/demobiocad$pytest_in_test_upload_file_py.coverage" NAME="pytest in test_upload_file.py Coverage Results" MODIFIED="1562738501925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/demobcd$pytest_for_test_upload_file_TestData.coverage" NAME="pytest for test_upload_file.TestData Coverage Results" MODIFIED="1562846750087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/demobiocad$pytest_in_bin.coverage" NAME="pytest in bin Coverage Results" MODIFIED="1561712506578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/demobiocad$pytest_in_test_login_py.coverage" NAME="pytest in test_login.py Coverage Results" MODIFIED="1562149114341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/demobiocad$pytest_for_test_upload_file_TestData.coverage" NAME="pytest for test_upload_file.TestData Coverage Results" MODIFIED="1562747841418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/demobcd$pytest_for_tests_tests_for_demo.coverage" NAME="pytest for tests.tests_for_demo Coverage Results" MODIFIED="1563201623134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/demobcd$pytest_for_tests_tests_for_demo.coverage" NAME="pytest for tests.tests_for_demo Coverage Results" MODIFIED="1563210112161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/page/base_page.py" />
@@ -618,34 +612,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/locators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fixture/application.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="68" column="69" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="69" />
+        <state relative-caret-position="1293">
+          <caret line="90" column="70" selection-start-line="90" selection-start-column="70" selection-end-line="90" selection-end-column="91" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/tests_for_demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-end-line="7" />
+        <state relative-caret-position="75">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/locators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="25" />
         </state>
       </provider>
     </entry>

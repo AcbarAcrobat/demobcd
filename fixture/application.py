@@ -14,23 +14,30 @@ class Application:
 
     def __init__(self):
         self.Locators = Locators
-        self.wd = WebDriver(executable_path="/home/tester/demobcd/drivers/chromedriver")
+        self.wd = WebDriver(executable_path="/Users/arm/demobcd/drivers/chromedriver 2")
         self.wd.implicitly_wait(60)
         self.session = SessionHelper(self)
 
     def open_home_page(self):
+        #This is fast method to the open home page
         wd = self.wd
         wd.get("http://vm-biocad-filestorage.axmor.nsk/")
 
     def upload_file(self):
         wd = self.wd
         self.open_home_page()
+        #For this we are find upload button and click for it
         wd.find_element(*Locators.UPLOAD_BUTTON).click()
-        wd.find_element(*Locators.CHOOSE_BUTTON).send_keys("/home/tester/demobcd/file/VIDEO_FILE.mp4")
+        #This is path to the file and uploaded it drag and drop method
+        wd.find_element(*Locators.CHOOSE_BUTTON).send_keys("/Users/arm/demobcd/file/VIDEO_FILE.mp4")
         time.sleep(1)
+        #In this we are opened file extended menu
         wd.find_element(*Locators.EXTENDED_BUTTON).click()
+        #Writing comment to the file
         wd.find_element(*Locators.UPLOAD_COMMENT).send_keys("This is comment for DEMO")
+        #This is click on the tags dropdown menu
         wd.find_element(*Locators.SELECT_DROPDOWN_INDICATOR).click()
+        #This is find tag
         wd.find_element(*Locators.INPUT_TEST_VALUE).send_keys("TEST")
         wd.find_element(*Locators.INPUT_TEST_VALUE).send_keys(Keys.DOWN + Keys.ENTER)
         wd.find_element(*Locators.VIDEO_QUALITY).click()
@@ -52,9 +59,6 @@ class Application:
         wd.find_element(*Locators.TAGS_TOP_BAR).click()
         wd.find_element(*Locators.TAGS_INPUT).send_keys("TEST_TAGS")
         wd.find_element(*Locators.ADD_TAG).click()
-
-    def destroy(self):
-        self.wd.quit()
 
     def at_page(self):
         return "FILES" in self.wd.title
@@ -84,3 +88,6 @@ class Application:
             return profile_logo_element.is_displayed()
         except TimeoutException:
             return False
+
+    def destroy(self):
+        self.wd.quit()

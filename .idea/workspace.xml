@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b38d3cc5-37e2-47d3-b427-4fb8319f086b" name="Default Changelist" comment="&quot;test_login - Worked&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/locators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/session.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,14 +13,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.73789847">
+    <splitter split-orientation="horizontal" split-proportion="0.57153964">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/fixture/application.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1293">
-                  <caret line="90" column="70" selection-start-line="90" selection-start-column="70" selection-end-line="90" selection-end-column="91" />
+                <state relative-caret-position="445">
+                  <caret line="82" selection-start-line="82" selection-end-line="82" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
                   </folding>
@@ -32,16 +32,16 @@
             <entry file="file://$PROJECT_DIR$/fixture/session.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="210">
-                  <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+                  <caret line="14" column="73" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="73" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/fixture/locators.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="25" />
+                <state relative-caret-position="150">
+                  <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
                 </state>
               </provider>
             </entry>
@@ -49,8 +49,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/conftest.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="465">
-                  <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+                <state relative-caret-position="195">
+                  <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
                 </state>
               </provider>
             </entry>
@@ -62,8 +62,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tests/tests_for_demo.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+                <state relative-caret-position="195">
+                  <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
@@ -145,17 +145,16 @@
         <option value="$PROJECT_DIR$/fixture/session.py" />
         <option value="$PROJECT_DIR$/tests/test_upload_file.py" />
         <option value="$PROJECT_DIR$/conftest.py" />
-        <option value="$PROJECT_DIR$/fixture/application.py" />
         <option value="$PROJECT_DIR$/tests/tests_for_demo.py" />
         <option value="$PROJECT_DIR$/fixture/locators.py" />
+        <option value="$PROJECT_DIR$/fixture/application.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="179" />
-    <option name="y" value="131" />
-    <option name="width" value="1082" />
-    <option name="height" value="661" />
+    <option name="x" value="2312" />
+    <option name="width" value="888" />
+    <option name="height" value="1061" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -163,6 +162,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,7 +200,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,6 +300,8 @@
       <workItem from="1563189754729" duration="2586000" />
       <workItem from="1563200903307" duration="858000" />
       <workItem from="1563204912237" duration="1779000" />
+      <workItem from="1563253227492" duration="718000" />
+      <workItem from="1563262103933" duration="13999000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;test_login&quot;">
       <created>1561710937681</created>
@@ -327,50 +328,50 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.15 at 18h 54m 37s.xml">
+    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.16 at 17h 46m 55s.xml">
       <configuration name="pytest for tests.tests_for_demo" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.15 at 18h 55m 14s.xml">
+    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.16 at 17h 49m 52s.xml">
       <configuration name="pytest for tests.tests_for_demo" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.15 at 18h 58m 09s.xml">
+    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.17 at 12h 06m 08s.xml">
       <configuration name="pytest for tests.tests_for_demo" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.15 at 18h 59m 27s.xml">
+    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.17 at 12h 06m 52s.xml">
       <configuration name="pytest for tests.tests_for_demo" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.15 at 21h 39m 36s.xml">
+    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.17 at 12h 07m 23s.xml">
       <configuration name="pytest for tests.tests_for_demo" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.15 at 21h 39m 48s.xml">
+    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.17 at 12h 56m 17s.xml">
       <configuration name="pytest for tests.tests_for_demo" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.15 at 21h 42m 20s.xml">
+    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.17 at 12h 58m 47s.xml">
       <configuration name="pytest for tests.tests_for_demo" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.15 at 23h 59m 29s.xml">
+    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.17 at 13h 00m 46s.xml">
       <configuration name="pytest for tests.tests_for_demo" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.16 at 00h 00m 17s.xml">
+    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.17 at 13h 14m 59s.xml">
       <configuration name="pytest for tests.tests_for_demo" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.16 at 00h 02m 18s.xml">
+    <history-entry file="pytest_for_tests_tests_for_demo - 2019.07.17 at 13h 15m 39s.xml">
       <configuration name="pytest for tests.tests_for_demo" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103492000" />
+    <option name="totallyTimeSpent" value="118209000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="2507" y="0" width="1333" height="1061" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.104166664" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12820514" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3278496" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.40232313" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.46774194" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.46673706" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -443,10 +444,10 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/demobiocad$pytest_in_test_upload_file_py.coverage" NAME="pytest in test_upload_file.py Coverage Results" MODIFIED="1562738501925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/demobcd$pytest_for_test_upload_file_TestData.coverage" NAME="pytest for test_upload_file.TestData Coverage Results" MODIFIED="1562846750087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/demobiocad$pytest_in_bin.coverage" NAME="pytest in bin Coverage Results" MODIFIED="1561712506578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/demobiocad$pytest_in_test_login_py.coverage" NAME="pytest in test_login.py Coverage Results" MODIFIED="1562149114341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/demobcd$pytest_for_tests_tests_for_demo.coverage" NAME="pytest for tests.tests_for_demo Coverage Results" MODIFIED="1563344127596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/demobiocad$pytest_for_test_upload_file_TestData.coverage" NAME="pytest for test_upload_file.TestData Coverage Results" MODIFIED="1562747841418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/demobcd$pytest_for_tests_tests_for_demo.coverage" NAME="pytest for tests.tests_for_demo Coverage Results" MODIFIED="1563210112161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/demobiocad$pytest_in_bin.coverage" NAME="pytest in bin Coverage Results" MODIFIED="1561712506578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/page/base_page.py" />
@@ -539,13 +540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_pytest_markers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-96">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/CustomLogger.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -607,25 +601,15 @@
     <entry file="file:///usr/local/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py" />
     <entry file="file://$PROJECT_DIR$/conftest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+        <state relative-caret-position="195">
+          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/application.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_pytest_markers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1293">
-          <caret line="90" column="70" selection-start-line="90" selection-start-column="70" selection-end-line="90" selection-end-column="91" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/tests_for_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        <state relative-caret-position="243">
+          <caret line="35" lean-forward="true" selection-start-line="12" selection-end-line="42" selection-end-column="27" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -635,14 +619,34 @@
     <entry file="file://$PROJECT_DIR$/fixture/session.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <caret line="14" column="73" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fixture/locators.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="25" />
+        <state relative-caret-position="150">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/application.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tests_for_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

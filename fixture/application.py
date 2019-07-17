@@ -1,3 +1,4 @@
+# coding=utf-8
 import time
 from selenium.webdriver.chrome.webdriver import WebDriver
 from fixture.session import SessionHelper
@@ -14,7 +15,7 @@ class Application:
     def __init__(self):
         """These are launch artifacts"""
         self.Locators = Locators
-        self.wd = WebDriver(executable_path="/home/tester/demobcd/drivers/chromedriver")
+        self.wd = WebDriver(executable_path="~/drivers/chromedriver 2")
         self.wd.implicitly_wait(60)
         self.session = SessionHelper(self)
 
@@ -29,7 +30,7 @@ class Application:
         '''We find the download button and click on it'''
         wd.find_element(*Locators.UPLOAD_BUTTON).click()
         '''This is path to the file and uploaded it drag and drop method'''
-        wd.find_element(*Locators.CHOOSE_BUTTON).send_keys("/home/tester/demobcd/file/VIDEO_FILE.mp4")
+        wd.find_element(*Locators.CHOOSE_BUTTON).send_keys("~/demobcd/file/VIDEO_FILE.mp4")
         time.sleep(1)
         '''In this we are opened file extended menu'''
         wd.find_element(*Locators.EXTENDED_BUTTON).click()
@@ -78,8 +79,9 @@ class Application:
         wd = self.wd
         try:
             upload_info = WebDriverWait(wd, 15).until(
-                EC.text_to_be_present_in_element(*Locators.UPLOAD_INFO)
-            )
+                EC.text_to_be_present_in_element\
+                    ((*Locators.UPLOAD_INFO), "loaded successfully")
+            return self.text
         except TimeoutException:
             return False
 

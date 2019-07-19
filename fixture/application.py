@@ -46,7 +46,7 @@ class Application:
         '''click download button'''
         wd.find_element(*Locators.FINALLY_UPLOAD_BUTTON).click()
         '''wait delay after uploaded end'''
-        time.sleep(3)
+        time.sleep(1)
 
     def create_template(self):
         wd = self.wd
@@ -68,19 +68,19 @@ class Application:
 
     def delete_file(self):
         wd = self.wd
+        wd.implicitly_wait(60)
         wd.find_element(*Locators.SEARCH_FIELD).send_keys("VIDEO")
         wd.find_element(*Locators.SEARCH_BUTTON).click()
         time.sleep(3)
         wd.find_element(*Locators.FILE_IN_GRID).click()
         wd.find_element(*Locators.DELETE_BUTTON).click()
 
-    def see_upload_info(self):
+    def upload_status(self):
         wd = self.wd
         wd.find_element(*Locators.UPLOAD_STATUS).click()
-        elm = wd.find_element(*Locators.UPLOAD_INFO)
         try:
-            WebDriverWait(wd, 120).until(EC.visibility_of_element_located(*Locators.UPLOAD_INFO))
-            return elm.is_displayed()
+            WebDriverWait(wd, 60).until((EC.invisibility_of_element_located(*Locators.UPLOAD_INFO)))
+            return True
         except TimeoutException:
             return False
 

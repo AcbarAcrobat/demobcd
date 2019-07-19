@@ -14,7 +14,8 @@ class Locators:
     FILES_GRID = (By.XPATH, "//div[@class = 'files_grid']")
     FILE_IN_GRID = (By.XPATH, "//span[text() = 'VIDEO_FILE.mp4']")
     UPLOAD_STATUS = (By.XPATH,"//*[name()='svg' and contains(@class, 'svg-inline--fa fa-arrow')]")
-    UPLOAD_INFO = (By.XPATH, "//div[contains(@class, 'uploading-file-progress-bar')]")
+    UPLOAD_INFO = (By.XPATH, "//div[contains(@class, 'uploading-file-size')][contains(., 'success') or contains(., 'успешно загружен')]")
+                   # "//div[contains(@class, 'uploading-file-progress-bar')]")
     # upload form locators
     EXTENDED_BUTTON = (By.XPATH, "//div[@class = 'uploadFile__prev_filename_size']/following-sibling::button")
     UPLOAD_COMMENT = (By.ID, "comment")

@@ -15,7 +15,7 @@ class Application:
     def __init__(self):
         """These are launch artifacts"""
         self.Locators = Locators
-        self.wd = WebDriver(executable_path='/home/tester/demobcd/drivers/chromedriver')
+        self.wd = WebDriver(executable_path='/Users/arm/demobcd/drivers/chromedriver 2')
         self.wd.implicitly_wait(60)
         self.session = SessionHelper(self)
 
@@ -30,7 +30,7 @@ class Application:
         '''We find the download button and click on it'''
         wd.find_element(*Locators.UPLOAD_BUTTON).click()
         '''This is path to the file and uploaded it drag and drop method'''
-        wd.find_element(*Locators.CHOOSE_BUTTON).send_keys('/home/tester/demobcd/file/VIDEO_FILE.mp4')
+        wd.find_element(*Locators.CHOOSE_BUTTON).send_keys('/Users/arm/demobcd/file/VIDEO_FILE.mp4')
         time.sleep(1)
         '''In this we are opened file extended menu'''
         wd.find_element(*Locators.EXTENDED_BUTTON).click()
@@ -68,7 +68,6 @@ class Application:
 
     def delete_file(self):
         wd = self.wd
-        wd.implicitly_wait(60)
         wd.find_element(*Locators.SEARCH_FIELD).send_keys("VIDEO")
         wd.find_element(*Locators.SEARCH_BUTTON).click()
         time.sleep(3)
@@ -77,9 +76,10 @@ class Application:
 
     def upload_status(self):
         wd = self.wd
+        wd.implicitly_wait(0)
         wd.find_element(*Locators.UPLOAD_STATUS).click()
         try:
-            WebDriverWait(wd, 60).until((EC.invisibility_of_element_located(*Locators.UPLOAD_INFO)))
+            WebDriverWait(wd, 60).until(EC.visibility_of_any_elements_located((Locators.UPLOAD_INFO)))
             return True
         except TimeoutException:
             return False

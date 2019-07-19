@@ -5,7 +5,7 @@ from fixture.session import SessionHelper
 from fixture.locators import Locators
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
@@ -15,7 +15,7 @@ class Application:
     def __init__(self):
         """These are launch artifacts"""
         self.Locators = Locators
-        self.wd = WebDriver(executable_path="~/drivers/chromedriver 2")
+        self.wd = WebDriver(executable_path='/home/tester/demobcd/drivers/chromedriver')
         self.wd.implicitly_wait(60)
         self.session = SessionHelper(self)
 
@@ -30,7 +30,7 @@ class Application:
         '''We find the download button and click on it'''
         wd.find_element(*Locators.UPLOAD_BUTTON).click()
         '''This is path to the file and uploaded it drag and drop method'''
-        wd.find_element(*Locators.CHOOSE_BUTTON).send_keys("~/demobcd/file/VIDEO_FILE.mp4")
+        wd.find_element(*Locators.CHOOSE_BUTTON).send_keys('/home/tester/demobcd/file/VIDEO_FILE.mp4')
         time.sleep(1)
         '''In this we are opened file extended menu'''
         wd.find_element(*Locators.EXTENDED_BUTTON).click()
@@ -46,7 +46,7 @@ class Application:
         '''click download button'''
         wd.find_element(*Locators.FINALLY_UPLOAD_BUTTON).click()
         '''wait delay after uploaded end'''
-        time.sleep(3)
+        time.sleep(1)
 
     def create_template(self):
         wd = self.wd
@@ -68,29 +68,19 @@ class Application:
 
     def delete_file(self):
         wd = self.wd
-        wd.find_element(*Locators.UPLOAD_STATUS).click()
-        self.check_upload_status()
+        wd.implicitly_wait(60)
         wd.find_element(*Locators.SEARCH_FIELD).send_keys("VIDEO")
         wd.find_element(*Locators.SEARCH_BUTTON).click()
+        time.sleep(3)
         wd.find_element(*Locators.FILE_IN_GRID).click()
         wd.find_element(*Locators.DELETE_BUTTON).click()
 
-    def check_upload_status(self):
+    def upload_status(self):
         wd = self.wd
+        wd.find_element(*Locators.UPLOAD_STATUS).click()
         try:
-            upload_info = WebDriverWait(wd, 15).until(
-                EC.text_to_be_present_in_element\
-                    ((*Locators.UPLOAD_INFO), "loaded successfully")
-            return self.text
-        except TimeoutException:
-            return False
-
-    def drop_down_menu(self):
-        wd = self.wd
-        try:
-            dropdown_menu = WebDriverWait(wd, 10) \
-                .until(EC.presence_of_element_located(*Locators.INPUT_TEST_VALUE))
-            return dropdown_menu.is_displayed()
+            WebDriverWait(wd, 60).until((EC.invisibility_of_element_located(*Locators.UPLOAD_INFO)))
+            return True
         except TimeoutException:
             return False
 
@@ -98,7 +88,7 @@ class Application:
         wd = self.wd
         try:
             profile_logo_element = WebDriverWait(wd, 10) \
-                .until(EC.presence_of_element_located(By.CLASS_NAME, "b-screen__logo-title"))
+                .until(EC.presence_of_element_located(By.CLASS_NAME, 'b-screen__logo-title'))
             return profile_logo_element.is_displayed()
         except TimeoutException:
             return False

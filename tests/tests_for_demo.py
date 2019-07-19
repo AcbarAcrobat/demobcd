@@ -8,6 +8,7 @@ def test_upload_file(app):
     app.at_page()
     app.create_tag()
     app.upload_file()
+    app.upload_status()
     app.delete_file()
     app.destroy()
 

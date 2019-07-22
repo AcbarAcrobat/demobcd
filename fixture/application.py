@@ -8,6 +8,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
+import allure
 
 
 class Application:
@@ -15,7 +16,7 @@ class Application:
     def __init__(self):
         """These are launch artifacts"""
         self.Locators = Locators
-        self.wd = WebDriver(executable_path='/Users/arm/demobcd/drivers/chromedriver 2')
+        self.wd = WebDriver(executable_path='/home/tester/demobcd/drivers/chromedriver')
         self.wd.implicitly_wait(60)
         self.session = SessionHelper(self)
 
@@ -24,13 +25,13 @@ class Application:
         wd = self.wd
         wd.get("http://vm-biocad-filestorage.axmor.nsk/")
 
-    def upload_file(self):
+    def test_upload_file(self):
         wd = self.wd
         self.open_home_page()
         '''We find the download button and click on it'''
         wd.find_element(*Locators.UPLOAD_BUTTON).click()
         '''This is path to the file and uploaded it drag and drop method'''
-        wd.find_element(*Locators.CHOOSE_BUTTON).send_keys('/Users/arm/demobcd/file/VIDEO_FILE.mp4')
+        wd.find_element(*Locators.CHOOSE_BUTTON).send_keys('/home/tester/demobcd/file/VIDEO_FILE.mp4')
         time.sleep(1)
         '''In this we are opened file extended menu'''
         wd.find_element(*Locators.EXTENDED_BUTTON).click()
@@ -48,7 +49,7 @@ class Application:
         '''wait delay after uploaded end'''
         time.sleep(1)
 
-    def create_template(self):
+    def test_create_template(self):
         wd = self.wd
         wd.find_element(*Locators.TEMPLATES_LINK).click()
         wd.find_element(*Locators.CREATE_TEMPLATE).click()
@@ -57,7 +58,7 @@ class Application:
         wd.find_element(*Locators.ASSESS_BUTTON).click()
         wd.find_element(*Locators.SAVE_TEMPLATE).click()
 
-    def create_tag(self):
+    def test_create_tag(self):
         wd = self.wd
         wd.find_element(*Locators.TAGS_TOP_BAR).click()
         wd.find_element(*Locators.TAGS_INPUT_FIELD).send_keys("TEST_TAGS")
@@ -66,7 +67,7 @@ class Application:
     def at_page(self):
         return "FILES" in self.wd.title
 
-    def delete_file(self):
+    def test_delete_file(self):
         wd = self.wd
         wd.find_element(*Locators.SEARCH_FIELD).send_keys("VIDEO")
         wd.find_element(*Locators.SEARCH_BUTTON).click()
@@ -74,7 +75,7 @@ class Application:
         wd.find_element(*Locators.FILE_IN_GRID).click()
         wd.find_element(*Locators.DELETE_BUTTON).click()
 
-    def upload_status(self):
+    def check_upload_status(self):
         wd = self.wd
         wd.implicitly_wait(0)
         wd.find_element(*Locators.UPLOAD_STATUS).click()

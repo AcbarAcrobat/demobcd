@@ -10,5 +10,6 @@ def test_upload_file(app):
     app.test_upload_file()
     app.check_upload_status()
     app.test_delete_file()
+    app.test_delete_tag()
     app.destroy()
 

@@ -1,10 +1,17 @@
-def test_upload_file(self):
-    wd = self.wd
-    self.open_home_page()
+import pytest
+from fixture.application import Application
+from fixture.locators import Locators
+import time
+from selenium.webdriver.common.keys import Keys
+
+
+def test_upload_file(app):
+    wd = app.wd
+    app.session.login()
     '''We find the download button and click on it'''
     wd.find_element(*Locators.UPLOAD_BUTTON).click()
     '''This is path to the file and uploaded it drag and drop method'''
-    wd.find_element(*Locators.CHOOSE_BUTTON).send_keys('/home/tester/demobcd/file/VIDEO_FILE.mp4')
+    wd.find_element(*Locators.CHOOSE_BUTTON).send_keys('/Users/arm/demobcd/file/VIDEO_FILE.mp4')
     time.sleep(1)
     '''In this we are opened file extended menu'''
     wd.find_element(*Locators.EXTENDED_BUTTON).click()

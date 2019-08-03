@@ -8,7 +8,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
-import allure
+from file.my_file import my_file
 
 
 class Application:
@@ -16,22 +16,21 @@ class Application:
     def __init__(self):
         """These are launch artifacts"""
         self.Locators = Locators
-        self.wd = WebDriver(executable_path='/home/tester/demobcd/drivers/chromedriver')
+        self.wd = WebDriver(executable_path='../demobcd/drivers/chromedriver 2')
         self.wd.implicitly_wait(60)
         self.session = SessionHelper(self)
 
     def open_home_page(self):
         """This is fast method to the open home page."""
         wd = self.wd
-        wd.get("http://vm-biocad-filestorage.axmor.nsk/")
+        wd.get('http://vm-biocad-filestorage.axmor.nsk/')
 
     def test_upload_file(self):
         wd = self.wd
-        self.open_home_page()
         '''We find the download button and click on it'''
         wd.find_element(*Locators.UPLOAD_BUTTON).click()
         '''This is path to the file and uploaded it drag and drop method'''
-        wd.find_element(*Locators.CHOOSE_BUTTON).send_keys('/home/tester/demobcd/file/VIDEO_FILE.mp4')
+        wd.find_element(*Locators.CHOOSE_BUTTON).send_keys(my_file)
         time.sleep(1)
         '''In this we are opened file extended menu'''
         wd.find_element(*Locators.EXTENDED_BUTTON).click()
@@ -49,6 +48,17 @@ class Application:
         '''wait delay after uploaded end'''
         time.sleep(1)
 
+    def check_upload_status(self):
+        wd = self.wd
+        wd.implicitly_wait(0)
+        try:
+            wd.find_element(*Locators.UPLOAD_STATUS).click()
+            elm = WebDriverWait(wd, 60).until(EC.visibility_of_any_elements_located((Locators.UPLOAD_INFO)))
+            time.sleep(2)
+            return elm
+        except TimeoutException:
+            return False
+
     def test_create_template(self):
         wd = self.wd
         wd.find_element(*Locators.TEMPLATES_LINK).click()
@@ -58,11 +68,21 @@ class Application:
         wd.find_element(*Locators.ASSESS_BUTTON).click()
         wd.find_element(*Locators.SAVE_TEMPLATE).click()
 
+    def test_delete_template(self):
+        wd = self.wd
+        wd.find_element(*Locators.TEMPLATES_LINK).click()
+        wd.find_element(*Locators.DELETE_LAST_TEMPLATE).click()
+
     def test_create_tag(self):
         wd = self.wd
         wd.find_element(*Locators.TAGS_TOP_BAR).click()
         wd.find_element(*Locators.TAGS_INPUT_FIELD).send_keys("TEST_TAGS")
         wd.find_element(*Locators.ADD_TAG).click()
+
+    def test_delete_tag(self):
+        wd = self.wd
+        wd.find_element(*Locators.TAGS_TOP_BAR).click()
+        wd.find_element((Locators.DELETE_LAST_TAG)).click()
 
     def at_page(self):
         return "FILES" in self.wd.title
@@ -74,16 +94,6 @@ class Application:
         time.sleep(3)
         wd.find_element(*Locators.FILE_IN_GRID).click()
         wd.find_element(*Locators.DELETE_BUTTON).click()
-
-    def check_upload_status(self):
-        wd = self.wd
-        wd.implicitly_wait(0)
-        wd.find_element(*Locators.UPLOAD_STATUS).click()
-        try:
-            WebDriverWait(wd, 60).until(EC.visibility_of_any_elements_located((Locators.UPLOAD_INFO)))
-            return True
-        except TimeoutException:
-            return False
 
     def header_page(self):
         wd = self.wd

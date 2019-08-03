@@ -1,0 +1,10 @@
+pip==19.1.1
+virtualenv==16.6.0
+pytest==5.0.1
+selenium==3.141.0
+cssselect==
+allure-pytest==2.7.0
+requests==2.22.0
+urllib3==1.24.1
+invoke==1.2.0
+docker==4.0.1

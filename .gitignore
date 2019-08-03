@@ -26,6 +26,7 @@ wheels/
 MANIFEST
 venv/
 %allure_result_folder%/
+linux_signing_key.pub
 
 # PyInstaller
 #  Usually these files are written by a python script from a template

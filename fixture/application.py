@@ -1,6 +1,8 @@
 # coding=utf-8
 import time
-from selenium.webdriver.chrome.webdriver import WebDriver
+from selenium import webdriver
+
+from config import capabilities
 from fixture.session import SessionHelper
 from fixture.locators import Locators
 from selenium.webdriver.common.by import By
@@ -9,13 +11,18 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
+command_executor = "http://127.0.0.1:4444/wd/hub"
+
 
 class Application:
 
     def __init__(self):
         """These are launch artifacts"""
         self.Locators = Locators
-        self.wd = WebDriver(executable_path='../demobcd/drivers/chromedriver 2')
+        self.wd = webdriver.Remote(
+            command_executor=command_executor,
+            desired_capabilities=capabilities
+        )
         self.wd.implicitly_wait(60)
         self.session = SessionHelper(self)
 

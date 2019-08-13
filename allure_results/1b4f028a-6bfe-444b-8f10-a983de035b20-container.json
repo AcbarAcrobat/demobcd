@@ -1,1 +1,0 @@
-{"uuid": "41021dc4-61de-4a53-9b91-e31651b408bb", "children": ["be023ea3-d1f7-473d-92b7-c253621af8fa"], "befores": [{"name": "app", "status": "passed", "start": 1564478842640, "stop": 1564478844944}], "afters": [{"name": "app::destroy", "status": "passed", "start": 1564478906026, "stop": 1564478906113}], "start": 1564478842640, "stop": 1564478906113}

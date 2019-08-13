@@ -15,7 +15,7 @@ class Application:
     def __init__(self):
         """These are launch artifacts"""
         self.Locators = Locators
-        self.wd = WebDriver(executable_path='../demobcd/drivers/chromedriver 2')
+        self.wd = WebDriver(executable_path='/home/tester/demobcd/driver/chromedriver')
         self.wd.implicitly_wait(60)
         self.session = SessionHelper(self)
 
@@ -29,7 +29,7 @@ class Application:
         '''We find the download button and click on it'''
         wd.find_element(*Locators.UPLOAD_BUTTON).click()
         '''This is path to the file and uploaded it drag and drop method'''
-        wd.find_element(*Locators.CHOOSE_BUTTON).send_keys(my_file)
+        wd.find_element(*Locators.CHOOSE_BUTTON).send_keys('/home/tester/demobcd/file/VIDEO_FILE.mp4')
         time.sleep(1)
         '''In this we are opened file extended menu'''
         wd.find_element(*Locators.EXTENDED_BUTTON).click()
@@ -77,11 +77,15 @@ class Application:
         wd.find_element(*Locators.TAGS_TOP_BAR).click()
         wd.find_element(*Locators.TAGS_INPUT_FIELD).send_keys("TEST_TAGS")
         wd.find_element(*Locators.ADD_TAG).click()
+        wd.find_element(*Locators.FILES_LINK).click()
+        time.sleep(1)
 
     def test_delete_tag(self):
         wd = self.wd
-        wd.find_element(*Locators.TAGS_TOP_BAR).click()
-        wd.find_element((Locators.DELETE_LAST_TAG)).click()
+        wd.get("http://vm-biocad-filestorage.axmor.nsk/tags")
+        assert "http://vm-biocad-filestorage.axmor.nsk/tags" in wd.current_url
+        time.sleep(2)
+        wd.find_element(*Locators.DELETE_LAST_TAG).click()
 
     def at_page(self):
         return "FILES" in self.wd.title

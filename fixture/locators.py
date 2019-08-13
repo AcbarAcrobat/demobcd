@@ -9,7 +9,7 @@ class Locators:
     # main page locators
     SEARCH_FIELD = (By.XPATH, "//input[@id = 'filename']")
     SEARCH_BUTTON = (By.XPATH, "//span[text() = 'Поиск' or text() = 'Search']")
-    UPLOAD_BUTTON = (By.XPATH, "//span[text()='Загрузить файл' or text() = 'Upload file']")
+    UPLOAD_BUTTON = (By.XPATH, "//span[contains(@class, 'hastext') and contains(., 'Загрузить') or contains(., 'Upload')]")
     CHOOSE_BUTTON = (By.XPATH, "//input[@type = 'file']")
     FILES_GRID = (By.XPATH, "//div[@class = 'files_grid']")
     FILE_IN_GRID = (By.XPATH, "//span[text() = 'VIDEO_FILE.mp4']")
@@ -29,6 +29,7 @@ class Locators:
     TAG_LINK = (By.XPATH, "//a[contains(@href,'tags')]")
     TAGS_TOP_BAR = (By.XPATH, "//a[contains(@href,'/tags')]")
     TEMPLATES_LINK = (By.XPATH, "//a[contains(@href,'templates')]")
+    FILES_LINK = (By.XPATH, "//a[contains(@href,'files')]")
     # templates page
     CREATE_TEMPLATE = (By.XPATH, "//span[text() = 'Create template' or text() = 'Создать шаблон']")
     TEMPLATE_NAME = (By.ID, "templateName")
@@ -37,6 +38,6 @@ class Locators:
     ASSESS_BUTTON = (By.XPATH, "(//label[contains(., 'Всем') or contains(., 'All')])")
     DELETE_LAST_TEMPLATE = (By.XPATH, "(//div[contains(@class, 'grid__cell-ico')]/following-sibling::*)[last()-3]")
     # tags page
-    DELETE_LAST_TAG = (By.XPATH, "(//span[contains(., 'Удалить') or contains(., 'Delete')])[last()-0]")
+    DELETE_LAST_TAG = (By.XPATH, "(//button[contains(@class, 'delete_tag')])[1]")
     # main page actions forms
     DELETE_BUTTON = (By.XPATH, "//span[text() = 'Delete' or text() = 'Удалить']")

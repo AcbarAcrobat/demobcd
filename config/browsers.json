@@ -12,16 +12,3 @@
     }
 }
 
-
-{
-    "browserName": 'chrome',
-    "unexpectedAlertBehaviour": 'accept',
-    "enableVNC": True,
-    "screenResolution": "1920x1080x24",
-    "loggingPrefs": {
-        "browser": "INFO"
-    },
-    "chromeOptions": {
-        "args": ['--disable-infobars']
-    }
-}

@@ -38,6 +38,6 @@ class Locators:
     ASSESS_BUTTON = (By.XPATH, "(//label[contains(., 'Всем') or contains(., 'All')])")
     DELETE_LAST_TEMPLATE = (By.XPATH, "(//div[contains(@class, 'grid__cell-ico')]/following-sibling::*)[last()-3]")
     # tags page
-    DELETE_LAST_TAG = (By.XPATH, "(//button[contains(@class, 'delete_tag')])[1]")
+    DELETE_LAST_TAG = (By.XPATH, "((//button[contains(@class, 'delete_tag')])[1])")
     # main page actions forms
     DELETE_BUTTON = (By.XPATH, "//span[text() = 'Delete' or text() = 'Удалить']")

@@ -1,7 +1,6 @@
 # coding=utf-8
 import time
 from selenium import webdriver
-
 from config import capabilities
 from fixture.session import SessionHelper
 from fixture.locators import Locators
@@ -10,6 +9,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.remote.file_detector import LocalFileDetector
+
 
 command_executor = "http://127.0.0.1:4444/wd/hub"
 
@@ -19,14 +20,10 @@ class Application:
     def __init__(self):
         """These are launch artifacts"""
         self.Locators = Locators
-<<<<<<< HEAD
-        self.wd = WebDriver(executable_path='/home/tester/demobcd/driver/chromedriver')
-=======
         self.wd = webdriver.Remote(
             command_executor=command_executor,
             desired_capabilities=capabilities
         )
->>>>>>> df03c59a7eaf23001c32de701aa31a6c9aa0c256
         self.wd.implicitly_wait(60)
         self.session = SessionHelper(self)
 
@@ -40,7 +37,10 @@ class Application:
         '''We find the download button and click on it'''
         wd.find_element(*Locators.UPLOAD_BUTTON).click()
         '''This is path to the file and uploaded it drag and drop method'''
-        wd.find_element(*Locators.CHOOSE_BUTTON).send_keys('/home/tester/demobcd/file/VIDEO_FILE.mp4')
+        input = wd.find_element_by_css_selector("input[type='file']")
+        wd.execute_script("arguments[0].style.display = 'block';", input)
+        wd.file_detector = LocalFileDetector()
+        input.send_keys("/Users/artyomlagunkov/demobcd/file/VIDEO_FILE.mp4")
         time.sleep(1)
         '''In this we are opened file extended menu'''
         wd.find_element(*Locators.EXTENDED_BUTTON).click()
@@ -93,9 +93,8 @@ class Application:
 
     def test_delete_tag(self):
         wd = self.wd
-        wd.get("http://vm-biocad-filestorage.axmor.nsk/tags")
-        assert "http://vm-biocad-filestorage.axmor.nsk/tags" in wd.current_url
-        time.sleep(2)
+        wd.find_element(*Locators.TAGS_TOP_BAR).click()
+        time.sleep(3)
         wd.find_element(*Locators.DELETE_LAST_TAG).click()
 
     def at_page(self):
@@ -108,6 +107,7 @@ class Application:
         time.sleep(3)
         wd.find_element(*Locators.FILE_IN_GRID).click()
         wd.find_element(*Locators.DELETE_BUTTON).click()
+        time.sleep(1)
 
     def header_page(self):
         wd = self.wd

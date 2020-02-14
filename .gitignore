@@ -3,3 +3,9 @@ venv/
 video/
 .idea/
 **/__pycache__/
+allure_results/
+driver
+tests/allure_results
+cm
+cm_linux_amd64
+config.yml

@@ -10,6 +10,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.remote.file_detector import LocalFileDetector
+from support import config
 
 
 command_executor = "http://127.0.0.1:4444/wd/hub"
@@ -27,10 +28,10 @@ class Application:
         self.wd.implicitly_wait(60)
         self.session = SessionHelper(self)
 
-    def open_home_page(self):
+    def open_home_page(self, url=config.get("url")):
         """This is fast method to the open home page."""
         wd = self.wd
-        wd.get('http://vm-biocad-filestorage.axmor.nsk/')
+        wd.get(url)
 
     def test_upload_file(self):
         wd = self.wd
@@ -40,7 +41,7 @@ class Application:
         input = wd.find_element_by_css_selector("input[type='file']")
         wd.execute_script("arguments[0].style.display = 'block';", input)
         wd.file_detector = LocalFileDetector()
-        input.send_keys("/Users/artyomlagunkov/demobcd/file/VIDEO_FILE.mp4")
+        input.send_keys(config.get("file"))
         time.sleep(1)
         '''In this we are opened file extended menu'''
         wd.find_element(*Locators.EXTENDED_BUTTON).click()
